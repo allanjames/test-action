@@ -24,3 +24,5 @@ jobs:
         run: |
           ls
           pwd
+      - name: Create artifact
+        run: cd ./project && zip -r project.zip .
