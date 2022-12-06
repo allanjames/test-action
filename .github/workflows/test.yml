@@ -1,6 +1,6 @@
 name: Workflow Practice
 
-on: [ pull ]
+on: [ pull_request ]
 
 jobs: 
   run-shell-command:
@@ -16,6 +16,4 @@ jobs:
         run: cd ./project && zip -r project.zip .
         uses: actions/upload-artifact@v2
           with:
-            name: site
-            path: ./project
             retention-days: 1
