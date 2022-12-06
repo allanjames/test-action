@@ -14,7 +14,13 @@ jobs:
         run: |
           node -v
           npm -v
-      - name: Output PWD
+      - name: Output Files
         run: |
           ls
-          echo pwd
+          pwd
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Output Files after checkout
+        run: |
+          ls
+          pwd
