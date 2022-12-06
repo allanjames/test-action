@@ -14,6 +14,7 @@ jobs:
         run: |
           node -v
           npm -v
+          echo github.ref
       - name: Output Files
         run: |
           ls
