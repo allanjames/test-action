@@ -2,7 +2,7 @@ name: Workflow Practice
 
 on:
     pull_request:
-        types: [ open ]
+        types: [ opened ]
 
 jobs: 
   run-shell-command:
