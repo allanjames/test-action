@@ -1,9 +1,8 @@
 name: Workflow Practice
 
 on:
-    push:
-        branches:
-          - master
+    pull_request:
+        types: [ open ]
 
 jobs: 
   run-shell-command:
@@ -17,6 +16,3 @@ jobs:
           npm -v
       - name: Create artifact
         run: cd ./project && zip -r project.zip .
-        uses: actions/upload-artifact@v2
-        with:
-          retention-days: 1
