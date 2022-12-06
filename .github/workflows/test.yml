@@ -14,7 +14,7 @@ jobs:
         run: |
           node -v
           npm -v
-          echo "Github ref value: $GITHUB_REF"
+          echo "Github ref value: $GITHUB_SHA"
       - name: Output Files
         run: |
           ls
